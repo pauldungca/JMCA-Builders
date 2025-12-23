@@ -1,54 +1,103 @@
 <?= $this->extend('home/layout') ?>
 
+<?= $this->section('page_css') ?>
+<link href="<?= base_url('assets/css/project.css') ?>" rel="stylesheet">
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
-<div class="container mt-5">
-    <h1>Projects</h1>
-    <p class="lead">Get in touch with us for your construction needs.</p>
-    
-    <div class="row mt-5">
-        <div class="col-md-6">
-            <h3>Send us a Message</h3>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="phone" class="form-label">Phone Number</label>
-                    <input type="tel" class="form-control" id="phone">
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-        </div>
-        
-        <div class="col-md-6">
-            <h3>Contact Information</h3>
-            <div class="mt-4">
-                <h5><i class="bi bi-geo-alt"></i> Address</h5>
-                <p>123 Construction Ave, Building City, BC 12345</p>
-                
-                <h5 class="mt-4"><i class="bi bi-telephone"></i> Phone</h5>
-                <p>+1 (555) 123-4567</p>
-                
-                <h5 class="mt-4"><i class="bi bi-envelope"></i> Email</h5>
-                <p>info@jmcabuilders.com</p>
-                
-                <h5 class="mt-4"><i class="bi bi-clock"></i> Business Hours</h5>
-                <p>Monday - Friday: 8:00 AM - 6:00 PM<br>
-                Saturday: 9:00 AM - 3:00 PM<br>
-                Sunday: Closed</p>
-            </div>
-        </div>
+<!-- HERO SECTION -->
+<section class="projects-hero">
+    <div class="projects-hero-content container">
+        <h1>
+            Our <span>Projects</span>
+        </h1>
+        <p>Transforming Vision Into Built Reality</p>
     </div>
-</div>
+</section>
+
+<!-- FILTER SECTION -->
+<section class="filter-section container">
+    <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="residential">Residential</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+        <button class="filter-btn" data-filter="ongoing">Ongoing</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+    </div>
+</section>
+
+
+<section class="projects-section container">
+    <div class="projects-grid">
+
+        <?php foreach ($projects as $project): ?>
+
+            <div class="project-card"
+                 data-category="<?= strtolower($project['category']) . ' ' . $project['status'] ?>">
+
+                <div class="project-image">
+                    <img src="<?= base_url($project['image']) ?>"
+                         alt="<?= esc($project['title']) ?>">
+
+                    <div class="project-overlay">
+                        <div class="project-status <?= esc($project['status']) ?>">
+                            <?= ucfirst($project['status']) ?>
+                        </div>
+                        <a href="#" class="view-project-btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="project-info">
+                    <span class="project-category"><?= esc($project['category']) ?></span>
+                    <h3><?= esc($project['title']) ?></h3>
+
+                    <p class="project-location">
+                        📍 <?= esc($project['location']) ?>
+                    </p>
+
+                    <div class="project-meta">
+                        <span>🏗️ <?= esc($project['duration']) ?></span>
+                        <span>📐 <?= esc($project['size']) ?></span>
+                    </div>
+                </div>
+
+            </div>
+
+        <?php endforeach; ?>
+
+    </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards  = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+
+            // remove active state
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const filter = button.getAttribute('data-filter');
+
+            projectCards.forEach(card => {
+                const categories = card.getAttribute('data-category');
+
+                if (filter === 'all' || categories.includes(filter)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+
+});
+</script>
 
 <?= $this->endSection() ?>
