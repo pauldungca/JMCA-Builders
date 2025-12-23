@@ -119,8 +119,9 @@
                     </li>
                   <li class="nav-item">
                         <a 
-                            class="nav-link quote-link <?= ($activePage === 'request') ? 'active' : '' ?>"
+                            class="quote-button nav-link"
                             href="<?= base_url('request') ?>"
+                            @click="navigateTo('request', $event)"
                         >
                             <i class="bi bi-envelope-fill me-2"></i>
                             Request a Quote
