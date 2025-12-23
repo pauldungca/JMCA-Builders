@@ -33,20 +33,6 @@
                     </div>
                 </div>
 
-                <!-- Services -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-widget">
-                        <h5 class="footer-title">Our Services</h5>
-                        <ul class="footer-links">
-                            <li><a href="#">Residential Construction</a></li>
-                            <li><a href="#">Commercial Projects</a></li>
-                            <li><a href="#">Renovation & Remodeling</a></li>
-                            <li><a href="#">Interior Design</a></li>
-                            <li><a href="#">Project Management</a></li>
-                        </ul>
-                    </div>
-                </div>
-
                 <!-- Contact Info -->
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-widget">

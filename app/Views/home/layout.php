@@ -17,6 +17,7 @@
     <!-- Custom CSS - Always load these -->
     <link href="<?= base_url('assets/css/styles.css') ?>" rel="stylesheet">
     <link href="<?= base_url('assets/css/footer.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/css/index.css') ?>" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
