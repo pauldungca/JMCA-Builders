@@ -67,13 +67,6 @@
                 <div class="col-md-6 text-center text-md-start">
                     <p class="mb-0">&copy; <?= date('Y') ?> JMCA Builders. All rights reserved.</p>
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <ul class="footer-bottom-links">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Sitemap</a></li>
-                    </ul>
-                </div>
             </div>
         </div>
     </div>
