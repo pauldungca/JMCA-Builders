@@ -117,7 +117,16 @@
                             Contact Us
                         </a>
                     </li>
-                    <button class="quote-button"><i class="bi bi-envelope-fill me-2"></i>Request a Quote</button>
+                  <li class="nav-item">
+                        <a 
+                            class="nav-link quote-link <?= ($activePage === 'request') ? 'active' : '' ?>"
+                            href="<?= base_url('request') ?>"
+                        >
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            Request a Quote
+                        </a>
+                    </li>
+
                 </ul>
             </div>
         </div>
