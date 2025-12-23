@@ -104,9 +104,14 @@
             <h2>Ready to Start Your Project?</h2>
             <p>Let's discuss how we can bring your construction dreams to reality</p>
             <div class="cta-buttons">
-                <button class="btn btn-outline-light btn-lg">
-                    <i class="bi bi-envelope-fill me-2"></i> Request a Quote
-                </button>   
+                <a 
+                    class="btn btn-outline-light btn-lg"
+                    href="<?= base_url('request') ?>"
+                    @click="navigateTo('request', $event)"
+                >
+                    <i class="bi bi-envelope-fill me-2"></i>
+                    Request a Quote
+                </a>
             </div>
         </div>
     </div>
