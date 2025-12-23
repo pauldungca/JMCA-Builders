@@ -10,15 +10,27 @@
 <section class="hero-section">
     <div class="hero-slideshow">
         <div class="hero-slide" :class="{ active: heroCurrentSlide === 0 }">
-            <img src="<?= base_url('assets/images/landing-image.jpg') ?>" alt="JMCA Builders Hero 1" class="hero-image">
-            <div class="hero-overlay"></div>
+            <img
+                src="<?= base_url('assets/images/landing-image.jpg') ?>?v=<?= filemtime(FCPATH.'assets/images/landing-image.jpg') ?>"
+                alt="JMCA Builders Hero 1"
+                class="hero-image"
+            >
+        <div class="hero-overlay"></div>
         </div>
         <div class="hero-slide" :class="{ active: heroCurrentSlide === 1 }">
-            <img src="<?= base_url('assets/images/landing-image_2.jpg') ?>" alt="JMCA Builders Hero 2" class="hero-image">
+            <img
+                src="<?= base_url('assets/images/landing-image_2.jpg') ?>?v=<?= filemtime(FCPATH.'assets/images/landing-image_2.jpg') ?>"
+                alt="JMCA Builders Hero 2"
+                class="hero-image"
+            >
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-slide" :class="{ active: heroCurrentSlide === 2 }">
-            <img src="<?= base_url('assets/images/landing-image_3.jpg') ?>" alt="JMCA Builders Hero 3" class="hero-image">
+            <img
+                src="<?= base_url('assets/images/landing-image_3.jpg') ?>?v=<?= filemtime(FCPATH.'assets/images/landing-image_3.jpg') ?>"
+                alt="JMCA Builders Hero 3"
+                class="hero-image"
+            >
             <div class="hero-overlay"></div>
         </div>
     </div>
@@ -39,13 +51,25 @@
             <div class="col-lg-6 mb-4 mb-lg-0">
                 <div class="about-carousel">
                     <div class="about-slide" :class="{ active: aboutCurrentSlide === 0 }">
-                        <img src="<?= base_url('assets/images/about-image.jpg') ?>" alt="About JMCA 1" class="img-fluid rounded">
+                        <img
+                            src="<?= base_url('assets/images/about-image.jpg') ?>?v=<?= filemtime(FCPATH.'assets/images/about-image.jpg') ?>"
+                            alt="About JMCA 1"
+                            class="img-fluid rounded"
+                        >
                     </div>
                     <div class="about-slide" :class="{ active: aboutCurrentSlide === 1 }">
-                        <img src="<?= base_url('assets/images/about-image_2.jpg') ?>" alt="About JMCA 2" class="img-fluid rounded">
+                        <img
+                            src="<?= base_url('assets/images/about-image_2.jpg') ?>?v=<?= filemtime(FCPATH.'assets/images/about-image_2.jpg') ?>"
+                            alt="About JMCA 2"
+                            class="img-fluid rounded"
+                        >
                     </div>
                     <div class="about-slide" :class="{ active: aboutCurrentSlide === 2 }">
-                        <img src="<?= base_url('assets/images/about-image_3.jpg') ?>" alt="About JMCA 3" class="img-fluid rounded">
+                        <img
+                            src="<?= base_url('assets/images/about-image_3.jpg') ?>?v=<?= filemtime(FCPATH.'assets/images/about-image_3.jpg') ?>"
+                            alt="About JMCA 3"
+                            class="img-fluid rounded"
+                        >
                     </div>
                     
                     <!-- Navigation Arrows -->
@@ -86,7 +110,7 @@
     <div class="container">
         <div class="text-center mb-5">
             <p class="service-subtitle">WHAT WE OFFER</p>
-            <h2 class="section-title">We provide the highest quality of <span style="color: #d29b20;">ARCHITECTURAL</span> and <span style="color: #d29b20;">ENGINEERING</span> services</h2>
+            <h2 class="section-title">We provide the a high quality of <span style="color: #d29b20;">ARCHITECTURAL</span> and <span style="color: #d29b20;">ENGINEERING</span> services</h2>
         </div>
         
         <!-- Architectural & Engineering Services -->
@@ -246,7 +270,11 @@
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="project-card">
-                    <img src="<?= base_url('assets/images/residential_1.jpg') ?>" alt="Project 1" class="project-image">
+                    <img
+                        src="<?= base_url('assets/images/residential_1.jpg') ?>?v=<?= filemtime(FCPATH.'assets/images/residential_1.jpg') ?>"
+                        alt="Project 1"
+                        class="project-image"
+                    >
                     <div class="project-overlay">
                         <h4 class="project-title">Modern Residence</h4>
                         <p class="project-category">Residential</p>
@@ -255,7 +283,11 @@
             </div>
             <div class="col-md-4">
                 <div class="project-card">
-                    <img src="<?= base_url('assets/images/residential_2.jpg') ?>" alt="Project 2" class="project-image">
+                    <img
+                        src="<?= base_url('assets/images/residential_2.jpg') ?>?v=<?= filemtime(FCPATH.'assets/images/residential_2.jpg') ?>"
+                        alt="Project 2"
+                        class="project-image"
+                    >
                     <div class="project-overlay">
                         <h4 class="project-title">Modern Residence</h4>
                         <p class="project-category">Residential</p>
@@ -264,7 +296,11 @@
             </div>
             <div class="col-md-4">
                 <div class="project-card">
-                    <img src="<?= base_url('assets/images/residential_3.jpg') ?>" alt="Project 3" class="project-image">
+                    <img
+                        src="<?= base_url('assets/images/residential_3.jpg') ?>?v=<?= filemtime(FCPATH.'assets/images/residential_3.jpg') ?>"
+                        alt="Project 3"
+                        class="project-image"
+                    >
                     <div class="project-overlay">
                         <h4 class="project-title">Modern Residence</h4>
                         <p class="project-category">Residential</p>
