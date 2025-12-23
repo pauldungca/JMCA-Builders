@@ -37,15 +37,32 @@ class HomeController extends BaseController
         return view('home/team', $data);
     }
 
-    public function projects()
-    {
-        $data = [
-            'title' => 'Projects - JMCA Builders',
-            'activePage' => 'projects'
-        ];
+    // public function projects()
+    // {
+    //     $data = [
+    //         'title' => 'Projects - JMCA Builders',
+    //         'activePage' => 'projects'
+    //     ];
 
-        return view('home/projects', $data);
+    //     return view('home/projects', $data);
+    // }
+
+
+    public function projects()
+{
+    $jsonPath = FCPATH . 'assets/data/projects.json';
+    $projects = [];
+
+    if (file_exists($jsonPath)) {
+        $projects = json_decode(file_get_contents($jsonPath), true) ?? [];
     }
+
+    return view('home/projects', [
+        'title'      => 'Projects - JMCA Builders',
+        'activePage' => 'projects',
+        'projects'   => $projects
+    ]);
+}
 
     public function services()
     {

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Modern Villa Estate",
+    "category": "Residential",
+    "status": "completed",
+    "location": "Angeles City, Pampanga",
+    "duration": "12 Months",
+    "size": "500 sqm",
+    "image": "assets/images/projects/proj1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "City Shopping Complex",
+    "category": "Commercial",
+    "status": "ongoing",
+    "location": "Clark, Pampanga",
+    "duration": "18 Months",
+    "size": "2,500 sqm",
+    "image": "assets/images/projects/proj2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Metropolitan Bridge",
+    "category": "Infrastructure",
+    "status": "completed",
+    "location": "San Fernando, Pampanga",
+    "duration": "24 Months",
+    "size": "800m Length",
+    "image": "assets/images/projects/proj3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Luxury Townhouse Series",
+    "category": "Residential",
+    "status": "completed",
+    "location": "Mabalacat, Pampanga",
+    "duration": "10 Months",
+    "size": "250 sqm",
+    "image": "assets/images/projects/proj4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Corporate Office Tower",
+    "category": "Commercial",
+    "status": "ongoing",
+    "location": "Angeles City, Pampanga",
+    "duration": "20 Months",
+    "size": "3,200 sqm",
+    "image": "assets/images/projects/proj5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Green Valley Subdivision",
+    "category": "Residential",
+    "status": "ongoing",
+    "location": "Porac, Pampanga",
+    "duration": "36 Months",
+    "size": "15 Hectares",
+    "image": "assets/images/projects/proj6.jpg"
+  }
+]

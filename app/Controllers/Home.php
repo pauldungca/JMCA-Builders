@@ -8,4 +8,12 @@ class Home extends BaseController
     {
         return view('home/index');
     }
+
+    public function projects()
+{
+    $json = file_get_contents(FCPATH . 'assets/data/projects.json');
+    $data['projects'] = json_decode($json, true);
+
+    return view('projects', $data);
+}
 }
