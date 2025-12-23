@@ -1,5 +1,7 @@
 <?= $this->extend('home/layout') ?>
-
+    <?= $this->section('page_css') ?>
+    <link href="<?= base_url('assets/css/index.css') ?>" rel="stylesheet">
+    <?= $this->endSection() ?>
 <?= $this->section('content') ?>
 
 <div class="container mt-5">
