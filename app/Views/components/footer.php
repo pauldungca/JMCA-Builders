@@ -11,10 +11,8 @@
                             Building excellence since our founding. We transform visions into reality with quality craftsmanship and unwavering dedication.
                         </p>
                         <div class="social-links mt-3">
-                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100088534586501" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            
                         </div>
                     </div>
                 </div>
@@ -40,21 +38,39 @@
                         <ul class="footer-contact">
                             <li>
                                 <i class="fas fa-map-marker-alt"></i>
-                                <span>123 Construction Ave<br>Building City, BC 12345</span>
+                                <span>Door 5, MCR Bldg.along McArthur <br>
+                                Highway, Brgy. Talaga, Capas, Philippines</span>
                             </li>
                             <li>
                                 <i class="fas fa-phone"></i>
-                                <span>+1 (555) 123-4567</span>
+                                <span>0966 761 9289</span>
                             </li>
                             <li>
                                 <i class="fas fa-envelope"></i>
-                                <span>info@jmcabuilders.com</span>
+                                <span>jmcabuilders2022@gmail.com</span>
                             </li>
                             <li>
                                 <i class="fas fa-clock"></i>
-                                <span>Mon - Fri: 8AM - 6PM</span>
+                                <span>Mon - Sat: 8AM - 5PM</span>
                             </li>
                         </ul>
+                    </div>
+                </div>
+
+                <!-- Google Map -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h5 class="footer-title">Find Us</h5>
+                        <div class="footer-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3846.8293955841255!2d120.59300607415136!3d15.38572318519899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2407d44c652eb73f%3A0x877a10a3a9cd2438!2sJMCA%20Builders!5e0!3m2!1sen!2sph!4v1766503324292!5m2!1sen!2sph" 
+                                width="100%" 
+                                height="250" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
                     </div>
                 </div>
             </div>

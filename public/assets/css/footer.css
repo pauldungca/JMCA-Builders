@@ -130,6 +130,25 @@
   line-height: 1.6;
 }
 
+/* Footer Map */
+.footer-map {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer-map iframe {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  filter: grayscale(20%) brightness(0.9);
+  transition: filter 0.3s ease;
+}
+
+.footer-map:hover iframe {
+  filter: grayscale(0%) brightness(1);
+}
+
 /* Footer Bottom */
 .footer-bottom {
   padding: 25px 0;
@@ -178,5 +197,9 @@
 
   .footer-bottom p {
     margin-bottom: 10px;
+  }
+
+  .footer-map iframe {
+    height: 200px;
   }
 }
