@@ -1,51 +1,112 @@
 <?= $this->extend('home/layout') ?>
 
+<?= $this->section('page_css') ?>
+<link href="<?= base_url('assets/css/contact.css') ?>" rel="stylesheet">
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
-<div class="container mt-5">
-    <h1>Contact Us</h1>
-    <p class="lead">Get in touch with us for your construction needs.</p>
-    
-    <div class="row mt-5">
-        <div class="col-md-6">
-            <h3>Send us a Message</h3>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="name" required>
+<!-- Hero Section -->
+<div class="contact-hero">
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">Let's Build Something Amazing Together</h1>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Projects Completed</div>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="email" required>
+                <div class="stat-item">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Years Experience</div>
                 </div>
-                <div class="mb-3">
-                    <label for="phone" class="form-label">Phone Number</label>
-                    <input type="tel" class="form-control" id="phone">
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Client Satisfaction</div>
                 </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+            </div>
         </div>
-        
-        <div class="col-md-6">
-            <h3>Contact Information</h3>
-            <div class="mt-4">
-                <h5><i class="bi bi-geo-alt"></i> Address</h5>
-                <p>123 Construction Ave, Building City, BC 12345</p>
-                
-                <h5 class="mt-4"><i class="bi bi-telephone"></i> Phone</h5>
-                <p>+1 (555) 123-4567</p>
-                
-                <h5 class="mt-4"><i class="bi bi-envelope"></i> Email</h5>
-                <p>info@jmcabuilders.com</p>
-                
-                <h5 class="mt-4"><i class="bi bi-clock"></i> Business Hours</h5>
-                <p>Monday - Friday: 8:00 AM - 6:00 PM<br>
-                Saturday: 9:00 AM - 3:00 PM<br>
-                Sunday: Closed</p>
+    </div>
+</div>
+
+<!-- Contact Information Section -->
+<div class="contact-section">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-description">We're here to answer your questions and discuss your next project</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Office Location -->
+            <div class="col-lg-3 col-md-6">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                    <h4>Visit Our Office</h4>
+                    <p>
+                        Door 5, MCR Bldg. <br>
+                        along McArthur Highway, <br>
+                        Brgy. Talaga, Capas, Philippines
+                    </p>
+               </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="col-lg-3 col-md-6">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <h4>Call Us</h4>
+                    <p>
+                        <strong>Our Number: </strong> 0966 761 9289
+                    </p>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="col-lg-3 col-md-6">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="bi bi-envelope-fill"></i>
+                    </div>
+                    <h4>Email Us</h4>
+                    <p>
+                        <strong>Our Email: </strong> jmcabuilders2022@gmail.com
+                    </p>
+                </div>
+            </div>
+
+            <!-- Business Hours -->
+            <div class="col-lg-3 col-md-6">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="bi bi-clock-fill"></i>
+                    </div>
+                    <h4>Business Hours</h4>
+                    <p>
+                        <strong>Mon - Sat:</strong> 8:00 AM - 5:00 PM<br>
+                        <strong>Sunday:</strong> Closed
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA Section -->
+<div class="cta-section">
+    <div class="container">
+        <div class="cta-content text-center">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Let's discuss how we can bring your construction dreams to reality</p>
+            <div class="cta-buttons">
+                <button class="btn btn-outline-light btn-lg">
+                    <i class="bi bi-envelope-fill me-2"></i> Request a Quote
+                </button>   
             </div>
         </div>
     </div>

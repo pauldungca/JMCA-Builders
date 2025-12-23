@@ -85,8 +85,11 @@ main {
 
 /* Header Styles */
 .main-header {
-  background-color: #1a1a1a;
+  background-color: #323232;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1030;
 }
 
 .main-header .navbar {
@@ -192,4 +195,21 @@ main {
   .loader-logo {
     width: 120px;
   }
+}
+
+.quote-button {
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border: 1px solid #ffffff;
+  background-color: #323232;
+}
+
+.quote-button:hover {
+  background-color: #ffffff;
+  color: #323232;
 }
