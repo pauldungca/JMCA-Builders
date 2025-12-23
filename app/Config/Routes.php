@@ -13,3 +13,4 @@ $routes->get('team', 'HomeController::team');
 $routes->get('projects', 'HomeController::projects');
 $routes->get('services', 'HomeController::services');
 $routes->get('contact', 'HomeController::contact');
+$routes->get('request', 'HomeController::request');

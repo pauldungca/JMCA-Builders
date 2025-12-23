@@ -83,4 +83,15 @@ class HomeController extends BaseController
 
         return view('home/contact', $data);
     }
+
+    public function request()
+    {
+        $data = [
+            'title' => 'Request - JMCA Builders',
+            'activePage' => 'request'
+        ];
+
+        return view('home/request', $data);
+    }
+
 }
