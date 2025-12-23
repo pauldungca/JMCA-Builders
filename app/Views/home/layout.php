@@ -18,6 +18,9 @@
     <link href="<?= base_url('assets/css/styles.css') ?>?v=<?= filemtime(FCPATH.'assets/css/styles.css') ?>" rel="stylesheet">
     <link href="<?= base_url('assets/css/footer.css') ?>?v=<?= filemtime(FCPATH.'assets/css/footer.css') ?>" rel="stylesheet">
     <link href="<?= base_url('assets/css/index.css') ?>?v=<?= filemtime(FCPATH.'assets/css/index.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/css/about.css') ?>?v=<?= filemtime(FCPATH.'assets/css/about.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/css/project.css') ?>?v=<?= filemtime(FCPATH.'assets/css/project.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/css/services.css') ?>?v=<?= filemtime(FCPATH.'assets/css/services.css') ?>" rel="stylesheet">
     <link href="<?= base_url('assets/css/contact.css') ?>?v=<?= filemtime(FCPATH.'assets/css/contact.css') ?>" rel="stylesheet">
     <link href="<?= base_url('assets/css/request.css') ?>?v=<?= filemtime(FCPATH.'assets/css/request.css') ?>" rel="stylesheet">
 
