@@ -16,6 +16,8 @@
     
     <!-- Custom CSS - Always load these -->
     <link href="<?= base_url('assets/css/styles.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/css/about.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/css/project.css') ?>" rel="stylesheet">
     <link href="<?= base_url('assets/css/footer.css') ?>" rel="stylesheet">
     
     <!-- Font Awesome -->
