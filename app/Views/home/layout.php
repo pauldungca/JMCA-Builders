@@ -22,6 +22,7 @@
     <link href="<?= base_url('assets/css/project.css') ?>?v=<?= filemtime(FCPATH.'assets/css/project.css') ?>" rel="stylesheet">
     <link href="<?= base_url('assets/css/services.css') ?>?v=<?= filemtime(FCPATH.'assets/css/services.css') ?>" rel="stylesheet">
     <link href="<?= base_url('assets/css/contact.css') ?>?v=<?= filemtime(FCPATH.'assets/css/contact.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/css/team.css') ?>?v=<?= filemtime(FCPATH.'assets/css/team.css') ?>" rel="stylesheet">
     <link href="<?= base_url('assets/css/request.css') ?>?v=<?= filemtime(FCPATH.'assets/css/request.css') ?>" rel="stylesheet">
 
     <!-- Font Awesome -->
