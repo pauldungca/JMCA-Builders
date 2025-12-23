@@ -11,6 +11,9 @@
     <!-- Custom CSS -->
     <link href="<?= base_url('assets/css/styles.css') ?>" rel="stylesheet">
     
+    <!-- Page Specific CSS -->
+    <?= $this->renderSection('page_css') ?>
+    
     <!-- Vue.js -->
     <script src="https://cdn.jsdelivr.net/npm/vue@3.3.4/dist/vue.global.js"></script>
 </head>
